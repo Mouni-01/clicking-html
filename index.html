@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <style>
+    header,footer{
+      background-color: rgb(179, 17, 17);
+      text-align: center;
+      padding-top: 25px;
+      height: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+    #click
+       {
+      display: none;
+    }
+    p{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+      color: rgb(121, 121, 121);
+
+    }
+    img{
+     height: 240px;
+     width: 300px;
+     margin-left: 20px; 
+     margin-top: 20px;
+     border: 5px solid black;
+     border-radius: 5px;
+     box-shadow:  2px 5px 30px gray;
+    }
+    body{
+      background-color: rgb(37, 27, 65);
+    }
+    .whole{
+      display: flex;
+      justify-content: center;
+    }
+    .tab{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      
+    }
+    th{
+      color: rgb(175, 56, 56);
+    }
+    tr{
+      color: rgb(221, 114, 114);
+    }
+    table{
+      border-color: black;
+    }
+    .ss{
+      text-align:center;
+    }
+    #sho{
+      margin-top: 350px;
+      border-radius: 50px;
+      border: 2px solid black;
+      height: 80px;
+      width: 80px;
+      color: rgb(177, 155, 198);
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      box-shadow:  2px 5px 30px rgb(164, 46, 194);
+      background-color: rgb(73, 23, 92);
+    }
+  </style>
+</head>
+<body>
+  <div class="ss">
+  <button id="sho" onclick="show()">Click to Show Page</button>
+  </div>
+  <div id="click">
+  <header>皆さんようこそ</header>
+  <div class="whole">
+  <div class="a">
+  <img  src="./sakamoto-days-illustration-hd-wallpaper-preview.jpg">
+  <p>Sakamota Days</p>
+  </div>
+  <div class="a">
+  <img src="ichigo-kurosaki-3840x2160-10567.png"  >
+  <p>Bleach</p>
+  </div>
+  <div class="a">
+  <img src="sung-jinwoo-dragon-3840x2160-15351.jpg" >
+  <p>Solo leveling</p>
+  </div>
+  </div>
+  <div class="tab">
+  <table border="2px" cellspacing="3px" cellpadding="5px" >
+    <tr>
+      <th>Anime</th>
+      <th>Rating</th>
+      <th>Episode</th>
+    </tr>
+    <tr>
+      <td>Sakamoto Days</td>
+      <td>4.5/5.0</td>
+      <td>12</td>
+    </tr>
+     <tr>
+      <td>Bleach</td>
+      <td>4.8/5.0</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Solo Leveling</td>
+      <td>4.4/5.0</td>
+      <td>24</td>
+    </tr>
+  </table>
+  </div>
+
+  <footer>
+   ありがとう
+  </footer>
+   </div>
+  <script>
+    function show(){
+      document.getElementById("click").style.display="block";
+      document.getElementById("sho").style.display = "none"; 
+    }
+  </script>
+</body>
+</html>
