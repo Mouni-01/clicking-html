@@ -74,6 +74,18 @@
       box-shadow:  2px 5px 30px rgb(164, 46, 194);
       background-color: rgb(73, 23, 92);
     }
+    #sh{
+       border-radius: 50px;
+      border: 2px solid black;
+      height: 80px;
+      width: 80px;
+      color: rgb(177, 155, 198);
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      box-shadow:  2px 5px 30px rgb(164, 46, 194);
+      background-color: rgb(73, 23, 92);
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -124,12 +136,20 @@
   <footer>
    ありがとう
   </footer>
+  <div class="ss">
+   <button id="sh" onclick="exitPage()">Click to exit Page</button>
+   </div>
    </div>
   <script>
     function show(){
       document.getElementById("click").style.display="block";
       document.getElementById("sho").style.display = "none"; 
     }
+     function exitPage() {
+      document.getElementById("click").style.display = "none";
+      document.getElementById("sho").style.display = "inline-block";
+    }
+    
   </script>
 </body>
 </html>
